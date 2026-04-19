@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote
+        name="github-yocto"
+        fetch="https://github.com/yoctoproject" />
+    <remote 
+        name="practice-yocto"
+        fetch=".." />
+    <default
+        revision="main"
+        remote="practice-yocto"
+        sync-j="8" />
+    
+    <!-- yocto projects -->
+    <project path="poky" name="poky" remote="github-yocto" revision="kirkstone" />
+    <!-- end yocto projects -->
+
+    <!-- practice projects -->
+    <project path="scripts" name="scripts">
+        <linkfile src="envsetup.sh" dest="envsetup.sh" />
+    </project>
+    <project path="layers/meta-practice" name="meta-practice" />
+    <project path="layers/meta-practice-bsp" name="meta-practice-bsp" />
+    <project path="layers/meta-helloworld" name="meta-helloworld" />
+    <!-- end practice projects -->
+</manifest>
