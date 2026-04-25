@@ -19,8 +19,11 @@
     <project path="scripts" name="scripts">
         <linkfile src="envsetup.sh" dest="envsetup.sh" />
     </project>
-    <project path="layers/meta-practice" name="meta-practice" />
-    <project path="layers/meta-practice-bsp" name="meta-practice-bsp" />
-    <project path="layers/meta-helloworld" name="meta-helloworld" />
+    <project path="documents" name="documents" revision="main" />
+    <project path="layers/meta-practice" name="meta-practice" revision="main" />
+    <project path="layers/meta-practice-bsp" name="meta-practice-bsp" revision="main" />
+    <project path="layers/meta-helloworld" name="meta-helloworld" revision="main" />
+
+    <project path="externalsrc/kernel-source" name="linux" revision="v5.15/dev" />
     <!-- end practice projects -->
 </manifest>
